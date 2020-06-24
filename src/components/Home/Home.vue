@@ -1,28 +1,35 @@
 <template>
-    <div class="container">
+  <div class="container">
     <div class="head-content">
       <div class="left-content">
         <h1 class="title">HEX Strategy</h1>
         <h2 class="sub-title">Prosta i wciągająca gra strategiczna</h2>
 
         <ul class="desc-list">
-          <li>- turowa gra strategiczna z prostymi i przejrzystymi zasadami,</li>
-          <li>- taktyczna, nie zawsze osiągniesz zwycięstwo starymi metodami,</li>
-          <li>- wciągająca! Lubisz strategie? W HEX Strategy zostaniesz na dłużej. To jest pewne!</li>
-          <li>- Multiplayer PvP! Zmierz się z innymi graczami. Pokaż kto jest Zwycięzcą,</li>
+          <li>
+            - turowa gra strategiczna z prostymi i przejrzystymi zasadami,
+          </li>
+          <li>
+            - taktyczna, nie zawsze osiągniesz zwycięstwo starymi metodami,
+          </li>
+          <li>
+            - Multiplayer PvP! Zmierz się z innymi graczami. Pokaż kto jest
+            Zwycięzcą,
+          </li>
+          <li>
+            - wciągająca! Lubisz strategie? W HEX Strategy zostaniesz na dłużej.
+            To jest pewne!
+          </li>
         </ul>
       </div>
 
       <div class="right-content">
-        <img
-          class="desc-image"
-          alt="Main Image"
-          src="land-screen.png"
-        />
+        <img class="desc-image" alt="Main Image" src="land-screen.png" />
       </div>
     </div>
 
     <a
+      class="google-play-button"
       href="https://play.google.com/store/apps/details?id=com.HeksanDEV.HexanGO&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
     >
       <img
@@ -35,21 +42,30 @@
 
 <script lang="ts">
 import Vue from 'vue'
-export default Vue.extend({
-    
-})
+export default Vue.extend({})
 </script>
 
 <style lang="scss" scoped>
+@import "~bootstrap/scss/_functions";
+@import "~bootstrap/scss/_variables";
+@import "~bootstrap/scss/mixins/_breakpoints";
+
 .container {
   .head-content {
-    height: 600px;
     display: flex;
     flex-direction: row;
-    
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
+
     .left-content {
       width: 50%;
       height: 100%;
+
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+      }
 
       .title {
         font-size: 60px;
@@ -71,9 +87,9 @@ export default Vue.extend({
       }
 
       .desc-list {
-        width: 100%;
-        padding: 30px;
+        width: calc(100% - 60px);
         text-align: left;
+        margin: 0;
 
         li {
           margin-top: 10px;
@@ -83,10 +99,13 @@ export default Vue.extend({
 
     .right-content {
       width: 50%;
-      height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
+
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+      }
 
       .desc-image {
         width: 70%;
@@ -104,6 +123,15 @@ export default Vue.extend({
   }
   100% {
     width: 100%;
+  }
+}
+
+.google-play-button {
+  width: 200px;
+
+  img {
+    width: inherit;
+    height: inherit;
   }
 }
 </style>

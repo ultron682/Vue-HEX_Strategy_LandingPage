@@ -4,18 +4,19 @@
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
+<script lang="ts">
+import Vue from 'vue'
 import Screens from '@/components/Screens/Screens.vue'
+import Component from 'vue-class-component'
 
-export default {
+@Component({
   name: 'screens-container',
   components: {
     Screens
-  },
-  data: function () {
-    return {
-      images: [
+  }
+})
+export default class ScreensContainer extends Vue {
+      images: Array<any> = [
         {
           id: 1,
           src:
@@ -36,8 +37,9 @@ export default {
           src:
             'https://lh3.googleusercontent.com/Wxd7Wq6VwAwbXliUY1lQFDWKnTZ4nMJne7RBYGDCr-mJxYSGiwhKCGbuQJHIopunFVo=w1752-h1938-rw'
         }
-      ],
-      oldImages: [
+      ];
+
+      oldImages: Array<any> = [
         {
           id: 11,
           src: '/old-screens/1.gif'
@@ -59,7 +61,5 @@ export default {
           src: '/old-screens/5.png'
         }
       ]
-    }
-  }
 }
 </script>

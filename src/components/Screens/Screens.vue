@@ -1,10 +1,5 @@
-<script lang="ts">
-import Vue from 'vue'
-import { Component, Prop } from 'vue-property-decorator'
-
-@Component({
-  template: `
-    <div>
+<template>
+  <div>
       <p>Zrzuty ekranu</p>
       <div class="screens-container">
         <div
@@ -26,8 +21,13 @@ import { Component, Prop } from 'vue-property-decorator'
         </div>
       </div>
     </div>
-  `
-})
+</template>>
+
+<script lang="ts">
+import Vue from 'vue'
+import { Component, Prop } from 'vue-property-decorator'
+
+@Component
 export default class Screens extends Vue {
   @Prop() private images!: Array<any>;
   @Prop() private oldImages!: Array<any>;
