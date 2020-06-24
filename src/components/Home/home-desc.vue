@@ -35,7 +35,7 @@ export default Vue.extend({})
 @import "~bootstrap/scss/_functions";
 @import "~bootstrap/scss/_variables";
 @import "~bootstrap/scss/mixins/_breakpoints";
-
+@import "@/styles/_global.scss";
 
 .container {
   .head-content {

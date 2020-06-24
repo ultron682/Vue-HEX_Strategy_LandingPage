@@ -6,7 +6,7 @@
         href="https://www.facebook.com/hexangogame"
         target="_blank"
       >
-        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-facebook"></i>
       </a>
       <a
         href="https://www.youtube.com/channel/UC0bimHez-W_7BQKRtKRtndw?view_as=subscriber&fbclid=IwAR0LDlaAK20yZzJnHA3q4Rj0YuFw98HQ87CxEUimgM5tLAKVY2haczYfvD8"
