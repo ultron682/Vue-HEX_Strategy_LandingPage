@@ -30,16 +30,6 @@
         src="https://play.google.com/intl/en_us/badges/static/images/badges/pl_badge_web_generic.png"
       />
     </a>
-
-    <!-- <p>
-      HEX Strategy to turowa strategia z trybem multiplayer. Twoim celem jest zniszczyć wrogą bazę dowodzenia, przy użyciu posiadanych kart. Jednostki tworzy się za pomocą kart, które dostajesz podczas rozpoczęcia każdej tury.
-      Walcz przeciw wrogim siłom nieprzyjaciela. Zostań, potężnym dowódcom od którego zależy los bitwy.
-      Zwycięzca może być tylko jeden! Stocz pojedynki przeciw innym graczom lub zagraj w kampanii dla jednego gracza! Użyj swoich wyjątkowych i potężnych kart, by odnieść zwycięstwo.
-      Karty są ważną częścią HEX Strategy! Zdobywasz je w kampanii oraz w trybie rywalizacji PvP.
-      Każda karta jest wyjątkowa, lecz tylko dane ich kombinacje dadzą przewagę. Aktualnie w grze znajdują się 26 kart, które odblokowujesz wraz z postępem w grze. W kampanii do ukończenia jest 18 zróżnicowanych poziomów + samouczek. Możesz być pewien, że znajdziesz tam wiele frajdy. Jakby to nadal było dla ciebie mało nie przejmuj się. Cały czas masz do dyspozycji tryb Rywalizacji PvP. Walcz z innymi graczami, i pokaż im, że to ty tutaj rządzisz.
-      HEX Strategy jest tworzony tylko przez jedną osobę i dlatego znajduje się we WCZESNYM DOSTĘPIE. Cały czas pracuję nad nią i mogę z radością oznajmić że gra wkrótce wyjdzie z BETY!
-      PROSTA A ZARAZEM ZŁOŻONA GRA STRATEGICZNA TBS
-    </p>-->
   </div>
 </template>
 
@@ -56,7 +46,7 @@ export default Vue.extend({
     height: 600px;
     display: flex;
     flex-direction: row;
-
+    
     .left-content {
       width: 50%;
       height: 100%;

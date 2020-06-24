@@ -6,14 +6,14 @@
 </template>
 
 <script>
-import Header from "@/components/Header/Header.vue";
+import Header from '@/components/Header/Header.vue'
 
 export default {
-  name: "Home",
+  name: 'Home',
   components: {
     Header
   }
-};
+}
 </script>
 
 <style lang="scss">
