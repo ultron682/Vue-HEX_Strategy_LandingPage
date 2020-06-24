@@ -6,19 +6,15 @@
         <h2 class="sub-title">Prosta i wciągająca gra strategiczna</h2>
 
         <ul class="desc-list">
+          <li>turowa gra strategiczna z prostymi i przejrzystymi zasadami,</li>
+          <li>taktyczna, nie zawsze osiągniesz zwycięstwo starymi metodami,</li>
           <li>
-            - turowa gra strategiczna z prostymi i przejrzystymi zasadami,
-          </li>
-          <li>
-            - taktyczna, nie zawsze osiągniesz zwycięstwo starymi metodami,
-          </li>
-          <li>
-            - Multiplayer PvP! Zmierz się z innymi graczami. Pokaż kto jest
+            Multiplayer PvP! Zmierz się z innymi graczami. Pokaż kto jest
             Zwycięzcą,
           </li>
           <li>
-            - wciągająca! Lubisz strategie? W HEX Strategy zostaniesz na dłużej.
-            To jest pewne!
+            wciągająca! Lubisz strategie? W HEX Strategy zostaniesz na dłużej.To
+            jest pewne!
           </li>
         </ul>
       </div>
@@ -27,16 +23,6 @@
         <img class="desc-image" alt="Main Image" src="land-screen.png" />
       </div>
     </div>
-
-    <a
-      class="google-play-button"
-      href="https://play.google.com/store/apps/details?id=com.HeksanDEV.HexanGO&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
-    >
-      <img
-        alt="pobierz z Google Play"
-        src="https://play.google.com/intl/en_us/badges/static/images/badges/pl_badge_web_generic.png"
-      />
-    </a>
   </div>
 </template>
 
@@ -49,6 +35,7 @@ export default Vue.extend({})
 @import "~bootstrap/scss/_functions";
 @import "~bootstrap/scss/_variables";
 @import "~bootstrap/scss/mixins/_breakpoints";
+
 
 .container {
   .head-content {
@@ -69,6 +56,7 @@ export default Vue.extend({})
 
       .title {
         font-size: 60px;
+        color: $accent1;
       }
 
       .sub-title {

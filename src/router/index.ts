@@ -19,11 +19,16 @@ const routes: Array<RouteConfig> = [
     path: '/contact',
     name: 'Contact',
     component: () => import('@/views/Contact-container.vue')
+  },
+  {
+    path: '*',
+    redirect: '/'
   }
 ]
 
 const router = new VueRouter({
-  routes
+  mode: 'history',
+  routes: routes
 })
 
 export default router
