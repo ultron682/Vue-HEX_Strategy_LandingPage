@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
-import Home from '../views/Home.vue'
+import HomeContainer from '../views/Home-container.vue'
 
 Vue.use(VueRouter)
 
@@ -8,17 +8,17 @@ const routes: Array<RouteConfig> = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: HomeContainer
   },
   {
     path: '/screens',
     name: 'Screens',
-    component: () => import('../views/Screens-container.vue')
+    component: () => import('@/views/Screens-container.vue')
   },
   {
     path: '/contact',
     name: 'Contact',
-    component: () => import('../views/Contact-container.vue')
+    component: () => import('@/views/Contact-container.vue')
   }
 ]
 
