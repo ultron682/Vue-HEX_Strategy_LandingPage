@@ -35,7 +35,7 @@ export default Vue.extend({})
 @import "~bootstrap/scss/_functions";
 @import "~bootstrap/scss/_variables";
 @import "~bootstrap/scss/mixins/_breakpoints";
-@import "@/styles/_global.scss";
+@import "@/scss/_global.scss";
 
 .container {
   .head-content {
@@ -56,7 +56,7 @@ export default Vue.extend({})
 
       .title {
         font-size: 60px;
-        color: $accent1;
+        color: $accent;
       }
 
       .sub-title {
