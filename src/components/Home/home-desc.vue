@@ -65,7 +65,7 @@ export default Vue.extend({});
         font-size: 26px;
         display: inline-block;
         color: $accent2;
-        animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 
         &::after {
           content: "";
@@ -74,7 +74,7 @@ export default Vue.extend({});
           height: 5px;
           border-radius: 25px;
           background-color: $accent2;
-          animation: sub-title-anim 0.4s;
+          animation: sub-title-anim 1.5s;
         }
       }
 
@@ -96,6 +96,7 @@ export default Vue.extend({});
       display: flex;
       justify-content: center;
       align-items: center;
+      animation: slit-in-vertical 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 
       @include media-breakpoint-down(sm) {
         width: 100%;
@@ -107,25 +108,24 @@ export default Vue.extend({});
     }
   }
 }
-
-@keyframes sub-title-anim {
-  0% {
-    width: 0%;
-  }
-  20% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
 .google-play-button {
   width: 200px;
 
   img {
     width: inherit;
     height: inherit;
+  }
+}
+
+@keyframes sub-title-anim {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
   }
 }
 </style>

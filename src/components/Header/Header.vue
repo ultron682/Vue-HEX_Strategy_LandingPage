@@ -57,14 +57,14 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue } from "vue-property-decorator";
 
 @Component
 export default class Header extends Vue {
   isActive = false;
 
-  onMenuClick () {
-    this.isActive = !this.isActive
+  onMenuClick() {
+    this.isActive = !this.isActive;
   }
 }
 </script>
@@ -129,8 +129,24 @@ export default class Header extends Vue {
           font-weight: 500;
 
           &:hover {
-            background: #0f65d670;
+            background: #0b162570;
           }
+        }
+
+        .router-link-exact-active {
+          position: relative;
+        }
+
+        .router-link-exact-active::after {
+          content: "";
+          width: 100%;
+          height: 4px;
+          position: absolute;
+          background-color: $accent1;
+          bottom: 0px;
+          left: 0px;
+          margin-left: 10px;
+          border-radius: 25px;
         }
       }
     }
@@ -223,9 +239,12 @@ export default class Header extends Vue {
         height: 100vh;
         position: fixed;
         z-index: 5;
-        background: gray;
+        //background-image: url("/hex_grid.png");
+        background: #485461;
+        background-color: linear-gradient(315deg, #485461 0%, #28313b 74%);
         left: 0;
         top: 0;
+        overflow: hidden;
 
         &--active {
           display: block;
@@ -243,6 +262,7 @@ export default class Header extends Vue {
 
           .list-element {
             button {
+              position: relative;
               border: none;
               background-color: #ff9900;
               color: #ffffff;

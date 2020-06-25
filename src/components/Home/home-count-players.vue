@@ -18,7 +18,9 @@ export default class HomeCountPlayers extends Vue {
   pullPlayerCount() {
     fetch("http://hexango.vxm.pl/api/getPlayersCount.php")
       .then(response => response.text())
-      .then(data => { this.playerCount = Number.parseInt(data) });
+      .then(data => {
+        this.playerCount = Number.parseInt(data);
+      });
   }
 }
 </script>
@@ -28,8 +30,10 @@ export default class HomeCountPlayers extends Vue {
 @import "~bootstrap/scss/_variables";
 @import "~bootstrap/scss/mixins/_breakpoints";
 @import "@/scss/_global.scss";
+@import "@/scss/_animations.scss";
 
 .container {
   width: 100%;
+  animation: opacity-in 0.45s ease-out both;
 }
 </style>

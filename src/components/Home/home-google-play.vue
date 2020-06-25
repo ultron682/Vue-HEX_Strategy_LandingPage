@@ -21,8 +21,8 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-export default Vue.extend({})
+import Vue from "vue";
+export default Vue.extend({});
 </script>
 
 <style lang="scss" scoped>
@@ -30,8 +30,12 @@ export default Vue.extend({})
 @import "~bootstrap/scss/_variables";
 @import "~bootstrap/scss/mixins/_breakpoints";
 @import "@/scss/_global.scss";
+@import "@/scss/_animations.scss";
 
 .container {
+  padding-top: 4%;
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
   .head {
     .title {
       font-size: 30px;
