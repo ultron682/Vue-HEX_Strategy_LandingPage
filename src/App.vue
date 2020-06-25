@@ -9,16 +9,16 @@
 </template>
 
 <script>
-import Header from '@/components/Header/Header'
-import Footer from '@/components/Footer/Footer'
+import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
     Header,
     Footer
   }
-}
+};
 </script>
 
 <style lang="scss">
@@ -31,9 +31,10 @@ export default {
   color: white;
   min-height: 100vh;
   text-align: center;
+  overflow: hidden;
 }
 
 .content {
-  min-height: calc(100vh - 160px);
+  min-height: calc(100vh - 165px);
 }
 </style>

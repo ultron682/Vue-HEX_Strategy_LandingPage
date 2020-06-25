@@ -88,7 +88,7 @@ export default class Header extends Vue {
     width: 100%;
     height: 5px;
     position: absolute;
-    top: 70px;
+    top: 65px;
     background-color: $accent1;
   }
 
@@ -124,7 +124,7 @@ export default class Header extends Vue {
           border-radius: 25px;
           outline: 0;
           cursor: pointer;
-          color: white;
+          color: $accent1;
           font-size: 18px;
           font-weight: 500;
 
@@ -168,16 +168,16 @@ export default class Header extends Vue {
       .hamburger__bars {
         position: absolute;
         width: 35px;
-        height: 2px;
-        background-color: #fff;
+        height: 3px;
+        background-color: $accent1;
         transition: transform 220ms ease-in-out;
         &:before,
         &:after {
           display: block;
           position: absolute;
           width: 35px;
-          height: 2px;
-          background-color: #fff;
+          height: 3px;
+          background-color: $accent1;
           content: "";
         }
         &:before {

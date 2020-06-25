@@ -46,7 +46,7 @@ export default class Contact extends Vue {
     };
 
     fetch(
-      "http://hexango.vxm.pl/WebService/CheckStatistics.php",
+      "http://hexango.vxm.pl/WebService/AddLog.php",
       requestOptions
     )
       .then(response => response.json())
