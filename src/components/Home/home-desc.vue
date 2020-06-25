@@ -56,12 +56,13 @@ export default Vue.extend({})
 
       .title {
         font-size: 60px;
-        color: $accent;
+        color: $accent1;
       }
 
       .sub-title {
         font-size: 26px;
         display: inline-block;
+        color: $accent2;
 
         &::after {
           content: "";
@@ -69,7 +70,7 @@ export default Vue.extend({})
           width: 100%;
           height: 5px;
           border-radius: 25px;
-          background-color: white;
+          background-color: $accent2;
           animation: sub-title-anim 0.4s;
         }
       }
@@ -78,6 +79,7 @@ export default Vue.extend({})
         width: calc(100% - 60px);
         text-align: left;
         margin: 0;
+        color: $accent2;
 
         li {
           margin-top: 10px;

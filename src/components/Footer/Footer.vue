@@ -1,11 +1,7 @@
 <template>
   <div class="footer-container">
-    <p>media społecznościowe</p>
     <div class="mobile-menu-social-media-items">
-      <a
-        href="https://www.facebook.com/hexangogame"
-        target="_blank"
-      >
+      <a href="https://www.facebook.com/hexangogame" target="_blank">
         <i class="fab fa-facebook"></i>
       </a>
       <a
@@ -31,9 +27,34 @@ export default class Footer extends Vue {
 @import "~bootstrap/scss/_functions";
 @import "~bootstrap/scss/_variables";
 @import "~bootstrap/scss/mixins/_breakpoints";
+@import "@/scss/_global.scss";
 
 .footer-container {
   width: 100%;
-  height: 100px;
+  height: 55px;
+  font-size: 40px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    background-color: $accent1;
+  }
+
+  .mobile-menu-social-media-items {
+    margin-top: 20px;
+  }
+
+  a {
+    margin: 10px;
+  }
+
+  i {
+    color: $accent1;
+  }
 }
 </style>

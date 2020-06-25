@@ -1,9 +1,9 @@
 <template>
   <div class="container">
     <div class="head">
-      <p class="title">Zagraj za damo</p>
+      <p class="title">Zagraj za darmo</p>
 
-      <p>Kliknij przycisk poniżej, aby pobrać HEX Strategy ze sklepu Google Play. To już czas, byś to ty zwyciężał!</p>
+      <p class="sub-title">Kliknij przycisk poniżej, aby pobrać HEX Strategy ze sklepu Google Play. To już czas, byś to ty zwyciężał!</p>
     </div>
     <a
       class="google-play-button"
@@ -26,11 +26,17 @@ export default Vue.extend({})
 @import "~bootstrap/scss/_functions";
 @import "~bootstrap/scss/_variables";
 @import "~bootstrap/scss/mixins/_breakpoints";
+@import "@/scss/_global.scss";
 
 .container {
   .head {
     .title {
       font-size: 30px;
+      color: $accent1;
+    }
+
+    .sub-title {
+      color: $accent2;
     }
   }
 

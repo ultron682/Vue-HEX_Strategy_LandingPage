@@ -1,6 +1,8 @@
 <template>
   <div class="header">
-    <img v-bind:src="'../hex_strategy_logo.png'" />
+    <router-link to="/">
+      <img class="logo" v-bind:src="'../icon.png'" />
+    </router-link>
 
     <div class="view-pc">
       <div class="tabs">
@@ -71,6 +73,7 @@ export default class Header extends Vue {
 @import "~bootstrap/scss/_functions";
 @import "~bootstrap/scss/_variables";
 @import "~bootstrap/scss/mixins/_breakpoints";
+@import "@/scss/_global.scss";
 
 .header {
   width: 100%;
@@ -86,12 +89,13 @@ export default class Header extends Vue {
     height: 5px;
     position: absolute;
     top: 70px;
-    background-color: --color-orange;
+    background-color: $accent1;
   }
 
-  img {
-    height: 80%;
-    margin-left: 5%;
+  .logo {
+    height: 50px;
+    border-radius: 18px;
+    margin-left: 18%;
   }
 
   .view {
@@ -218,6 +222,7 @@ export default class Header extends Vue {
         width: 100vw;
         height: 100vh;
         position: fixed;
+        z-index: 5;
         background: gray;
         left: 0;
         top: 0;

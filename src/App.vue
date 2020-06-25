@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <Header />
-    <router-view />
+    <div class="content">
+      <router-view />
+    </div>
     <Footer />
   </div>
 </template>
@@ -29,5 +31,9 @@ export default {
   color: white;
   min-height: 100vh;
   text-align: center;
+}
+
+.content {
+  min-height: calc(100vh - 160px);
 }
 </style>
