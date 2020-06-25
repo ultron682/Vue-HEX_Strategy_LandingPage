@@ -20,30 +20,39 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue } from "vue-property-decorator";
 
 @Component
 export default class Contact extends Vue {
-   message = ''
+  message = "";
 
-   sendForm (e: any): any {
-     e.preventDefault()
+  sendForm(e: any) {
+    e.preventDefault();
 
-     //  let data = new FormData()
-     //  data.append('key_user', 'WEB')
-     //  data.append('message', this.message)
-     //  data.append('ver', 'WEB')
+    let data = new FormData();
+    data.append("key_user", "WEB");
+    data.append("message", this.message);
+    data.append("ver", "WEB");
 
-     //   fetch
-     //     .post("http://hexango.vxm.pl/WebService/AddLog.php", data, {
-     //       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-     //       responseType: "blob"
-     //     })
-     //     .then(response => {
-     //       console.log(response);
-     //       console.log(response.data);
-     //     });
-   }
+    const requestOptions: RequestInit = {
+      method: "POST",
+      mode: "cors",
+      headers: {
+        "Content-Type": "application/json", // sent request
+        "User-Agent":
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0"
+      },
+      body: data
+    };
+
+    fetch(
+      "http://hexango.vxm.pl/WebService/CheckStatistics.php",
+      requestOptions
+    )
+      .then(response => response.json())
+      .then(data => console.log(data))
+      .catch(error => console.log(error));
+  }
 }
 </script>
 

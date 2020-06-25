@@ -1,18 +1,25 @@
 <template>
-  <div class="container"></div>
+  <div class="container">
+    <p>Jest nas już {{ playerCount }}</p>
+  </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue } from "vue-property-decorator";
 
 @Component
 export default class HomeCountPlayers extends Vue {
- 
- pullPlayerCount () {
- fetch("https://api.npms.io/v2/search?q=vue")
-    .then(response => response.json())
-    .then(data => (console.log(data)));
- }
+  playerCount: number = 0;
+
+  created() {
+    this.pullPlayerCount();
+  }
+
+  pullPlayerCount() {
+    fetch("http://hexango.vxm.pl/api/getPlayersCount.php")
+      .then(response => response.text())
+      .then(data => { this.playerCount = Number.parseInt(data) });
+  }
 }
 </script>
 

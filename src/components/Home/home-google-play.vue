@@ -3,7 +3,10 @@
     <div class="head">
       <p class="title">Zagraj za darmo</p>
 
-      <p class="sub-title">Kliknij przycisk poniżej, aby pobrać HEX Strategy ze sklepu Google Play. To już czas, byś to ty zwyciężał!</p>
+      <p class="sub-title">
+        Kliknij przycisk poniżej, aby pobrać HEX Strategy ze sklepu Google Play.
+        To już czas, byś to ty zwyciężał!
+      </p>
     </div>
     <a
       class="google-play-button"

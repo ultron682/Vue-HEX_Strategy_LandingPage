@@ -5,7 +5,7 @@
         <i class="fab fa-facebook"></i>
       </a>
       <a
-        href="https://www.youtube.com/channel/UC0bimHez-W_7BQKRtKRtndw?view_as=subscriber&fbclid=IwAR0LDlaAK20yZzJnHA3q4Rj0YuFw98HQ87CxEUimgM5tLAKVY2haczYfvD8"
+        href="https://www.youtube.com/channel/UCd3aQRYfEiwtqw9O0QWPtzg/featured"
         target="_blank"
       >
         <i class="fab fa-youtube"></i>
