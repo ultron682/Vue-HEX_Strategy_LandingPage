@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="text-holder">
-      <p>Jest nas już {{ playerCount }}</p>
+      <p>W BETA testach uczestniczy już {{ playerCount }}</p>
     </div>
   </div>
 </template>
@@ -44,8 +44,8 @@ export default class HomeCountPlayers extends Vue {
     width: 280px;
     border: double 4px transparent;
     border-radius: 80px;
-    background-image: linear-gradient($background-main, $background-main),
-      radial-gradient(circle at top left, #f00, #3020ff);
+    background-image: linear-gradient(#485461, #485461),
+      radial-gradient(circle at top left, #ff8100, #0089ff);
     background-origin: border-box;
     background-clip: content-box, border-box;
     margin: auto;
