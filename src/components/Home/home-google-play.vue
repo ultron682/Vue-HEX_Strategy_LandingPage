@@ -34,16 +34,21 @@ export default Vue.extend({});
 
 .container {
   padding-top: 4%;
+  padding-right: 15%;
+  padding-left: 15%;
   animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 
   .head {
     .title {
       font-size: 30px;
+      font-weight: 600;
       color: $accent1;
     }
 
     .sub-title {
       color: $accent2;
+      font-size: 20px;
+      font-weight: 600;
     }
   }
 

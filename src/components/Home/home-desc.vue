@@ -58,7 +58,8 @@ export default Vue.extend({});
       .title {
         font-size: 60px;
         color: $accent1;
-        animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        animation: slide-in-left  0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+                animation: text-pop-up-top  0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
       }
 
       .sub-title {

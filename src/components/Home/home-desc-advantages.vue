@@ -32,6 +32,21 @@
         </h2>
       </div>
     </div>
+
+    <div class="container el1">
+      <div class="texts-content">
+        <h1 class="title">Graj ze znajomymi</h1>
+        <h2 class="sub-title">
+          HEX Strategy wyróżnia się tym na tle innych gier strategicznych, że
+          poziomów jest praktycznie nieskończona ilość. Wiele ciekawych poziomów
+          stworzonych przez społeczność już czeka na ciebie w Trybie Kreatywnym.
+        </h2>
+      </div>
+
+      <div class="image-content">
+        <img class="desc-image" alt="Main Image" src="home/desc_cards.png" />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -102,5 +117,9 @@ export default class HomeDescAdvantages extends Vue {}
 }
 .el2 {
   animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+  @include media-breakpoint-down(sm) {
+    flex-direction: column-reverse;
+  }
 }
 </style>

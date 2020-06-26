@@ -23,18 +23,19 @@ export default {
 
 <style lang="scss">
 #app {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #485461;
   background-color: #485461;
   background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
   color: white;
-  min-height: 100vh;
   text-align: center;
   overflow: hidden;
 }
 
 .content {
-  min-height: calc(100vh - 165px);
+  min-height: calc(100vh - 161px);
 }
 </style>
