@@ -1,31 +1,31 @@
 <template>
   <div>
-      <p>Zrzuty ekranu</p>
-      <div class="screens-container">
-        <div
-          v-for="image in images"
-          v-bind:key="image.id"
-          class="image-container"
-        >
-          <img alt="Main Image" v-bind:src="image.src" />
-        </div>
+    <p>Zrzuty ekranu</p>
+    <div class="screens-container">
+      <div
+        v-for="image in images"
+        v-bind:key="image.id"
+        class="image-container"
+      >
+        <img alt="Main Image" v-bind:src="image.src" />
+      </div>
 
-        <p class="title-old">Stare zrzuty ekranu</p>
+      <p class="title-old">Stare zrzuty ekranu</p>
 
-        <div
-          v-for="image in oldImages"
-          v-bind:key="image.id"
-          class="image-container"
-        >
-          <img alt="Main Image" v-bind:src="image.src" />
-        </div>
+      <div
+        v-for="image in oldImages"
+        v-bind:key="image.id"
+        class="image-container"
+      >
+        <img alt="Main Image" v-bind:src="image.src" />
       </div>
     </div>
+  </div>
 </template>>
 
 <script lang="ts">
-import Vue from 'vue'
-import { Component, Prop } from 'vue-property-decorator'
+import Vue from "vue";
+import { Component, Prop } from "vue-property-decorator";
 
 @Component
 export default class Screens extends Vue {

@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <div class="container el1">
+    <div data-aos="fade-up-right" class="container el1">
       <div class="texts-content">
         <h1 class="title">Zbierz je wszystkie!</h1>
         <h2 class="sub-title">
@@ -18,11 +18,10 @@
       </div>
     </div>
 
-    <div class="container el2">
+    <div data-aos="fade-up-left" class="container el2">
       <div class="image-content">
-        <img class="desc-image" alt="Main Image" src="home/desc_cards.png" />
+        <img class="desc-image" alt="Main Image" src="home/home_levels.png" />
       </div>
-
       <div class="texts-content">
         <h1 class="title">Nieskończona ilość poziomów</h1>
         <h2 class="sub-title">
@@ -33,13 +32,14 @@
       </div>
     </div>
 
-    <div class="container el1">
+    <div data-aos="fade-up-right" class="container el1">
       <div class="texts-content">
         <h1 class="title">Graj ze znajomymi</h1>
         <h2 class="sub-title">
-          HEX Strategy wyróżnia się tym na tle innych gier strategicznych, że
-          poziomów jest praktycznie nieskończona ilość. Wiele ciekawych poziomów
-          stworzonych przez społeczność już czeka na ciebie w Trybie Kreatywnym.
+          Każdy pojedynek to okazja do świetnej rozgrywki i wykazania się w
+          bitwie. Grając w trybie multiplayer może się okazać, że taktyki, które
+          wykorzystywałeś w kampanii mogą nie odnieść sukcesu w porównaniu do
+          starć przeciw prawdziwym graczom
         </h2>
       </div>
 
@@ -63,7 +63,6 @@ export default class HomeDescAdvantages extends Vue {}
 @import "~bootstrap/scss/_variables";
 @import "~bootstrap/scss/mixins/_breakpoints";
 @import "@/scss/_global.scss";
-@import "@/scss/_animations.scss";
 
 .container {
   display: flex;
@@ -112,12 +111,7 @@ export default class HomeDescAdvantages extends Vue {}
   }
 }
 
-.el1 {
-  animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
 .el2 {
-  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-
   @include media-breakpoint-down(sm) {
     flex-direction: column-reverse;
   }
