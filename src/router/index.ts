@@ -11,8 +11,8 @@ const routes: Array<RouteConfig> = [
     component: HomeContainer
   },
   {
-    path: '/screens',
-    name: 'Screens',
+    path: '/gameplay',
+    name: 'Gameplay',
     component: () => import('@/views/Screens-container.vue')
   },
   {
@@ -28,7 +28,7 @@ const routes: Array<RouteConfig> = [
 
 const router = new VueRouter({
   mode: 'history',
-  routes: routes
+  routes
 })
 
 export default router

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>Zrzuty ekranu</p>
+    <p class="title">Zrzuty ekranu</p>
     <div class="screens-container">
       <div
         v-for="image in images"
@@ -35,6 +35,10 @@ export default class Screens extends Vue {
 </script>
 
 <style lang="scss" scoped>
+.title {
+  font-size: 30px;
+}
+
 .screens-container {
   width: 100%;
   display: flex;

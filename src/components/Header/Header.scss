@@ -1,0 +1,273 @@
+@import "~bootstrap/scss/_functions";
+@import "~bootstrap/scss/_variables";
+@import "~bootstrap/scss/mixins/_breakpoints";
+@import "@/scss/_global.scss";
+
+.header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &::after {
+        content: "";
+        width: 100%;
+        height: 5px;
+        position: absolute;
+        top: 65px;
+        background-color: $accent1;
+    }
+
+    .logo {
+        height: 50px;
+        border-radius: 18px;
+        margin-left: 18%;
+    }
+
+    .view {
+        &-pc {
+            @include media-breakpoint-down(sm) {
+                display: none;
+            }
+
+            .tabs {
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+                margin-right: 5%;
+
+                .tab {
+                    width: 100%;
+                    height: 40px;
+                    position: relative;
+                    padding: 10px;
+                    border: 0;
+                    margin-right: 10px;
+                    margin-left: 10px;
+                    background: transparent;
+                    transition: 0.2s;
+                    border-radius: 25px;
+                    outline: 0;
+                    cursor: pointer;
+                    color: $accent1;
+                    font-size: 18px;
+                    font-weight: 500;
+
+                    &:hover {
+                        background: #0b162570;
+
+                        &::after {
+                            content: "";
+                            width: 0%;
+                            height: 4px;
+                            position: absolute;
+                            margin: auto;
+                            background-color: $accent1;
+                            bottom: 0px;
+                            left: 0px;
+                            right: 0px;
+                            border-radius: 25px;
+                            animation: grow-up-bar-active ease-in-out 0.5s;
+      
+                        }
+                    }
+                }
+
+                .router-link-exact-active {
+                    position: relative;
+                }
+
+                .router-link-exact-active::after {
+                    content: "";
+                    width: 100%;
+                    height: 4px;
+                    position: absolute;
+                    background-color: $accent1;
+                    bottom: 0px;
+                    left: 0px;
+                    margin-left: 10px;
+                    border-radius: 25px;
+                }
+            }
+        }
+        &-mobile {
+            display: none;
+            margin-right: 18px;
+
+            @include media-breakpoint-down(sm) {
+                display: block;
+            }
+
+            .hamburger {
+                z-index: 100;
+                position: absolute;
+                right: 20px;
+                top: 18px;
+                margin: 0;
+                padding: 0;
+                border: 0;
+                background-color: transparent;
+                cursor: pointer;
+                &:focus {
+                    & > .hamburger__container {
+                        box-shadow: 0 0 2px 2px #51a7e8;
+                    }
+                }
+            }
+
+            .hamburger__container {
+                display: flex;
+                align-items: center;
+                position: relative;
+                width: 35px;
+                height: 30px;
+            }
+
+            .hamburger__bars {
+                position: absolute;
+                width: 35px;
+                height: 3px;
+                background-color: $accent1;
+                transition: transform 220ms ease-in-out;
+                &:before,
+                &:after {
+                    display: block;
+                    position: absolute;
+                    width: 35px;
+                    height: 3px;
+                    background-color: $accent1;
+                    content: "";
+                }
+                &:before {
+                    top: -12px;
+                    transition: top 100ms 250ms ease-in, transform 220ms ease-in-out;
+                }
+                &:after {
+                    bottom: -12px;
+                    transition: bottom 100ms 250ms ease-in, transform 220ms ease-in-out;
+                }
+            }
+
+            .hamburger--active {
+                position: fixed;
+                right: 20px;
+                top: 18px;
+
+                .hamburger__bars {
+                    transform: rotate(225deg);
+                    transition: transform 220ms 120ms ease-in-out;
+                    &:before {
+                        top: 0;
+                        transition: top 100ms ease-out;
+                    }
+                    &:after {
+                        bottom: 0;
+                        transform: rotate(-90deg);
+                        transition: bottom 100ms ease-out, transform 220ms 120ms ease-in-out;
+                    }
+                }
+            }
+
+            .hamburger,
+            .hamburger__container {
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .mobile-menu {
+                display: none;
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                z-index: 5;
+                background: #485461;
+                background-color: linear-gradient(315deg, #485461 0%, #28313b 74%);
+                left: 0;
+                top: 0;
+                overflow: hidden;
+
+                &--active {
+                    display: block;
+                }
+
+                .list-container {
+                    width: 100%;
+                    height: 100%;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    .list-element {
+                        .router-link-exact-active {
+                            position: relative;
+                        }
+
+                        .router-link-exact-active::after {
+                            content: "";
+                            width: 0%;
+                            height: 4px;
+                            position: absolute;
+                            background-color: $accent1;
+                            bottom: -7px;
+                            left: 0px;
+                            border-radius: 25px;
+                            animation: grow-up-bar-active ease-in-out 0.5s;
+                            animation-delay: 0.2s;
+                        }
+
+                        button {
+                            position: relative;
+                            border: none;
+                            background-color: transparent;
+                            color: #ffffff;
+                            text-transform: uppercase;
+                            font-size: 20px;
+                            font-weight: 600;
+                            padding: 10px;
+                            border-radius: 25px;
+                            margin: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tilt-in-fwd-tr {
+    animation: tilt-in-fwd-tr 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes tilt-in-fwd-tr {
+    0% {
+        -webkit-transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+        transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+        transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes grow-up-bar-active {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 90%;
+    }
+    100% {
+        width: 0%;
+    }
+}
+

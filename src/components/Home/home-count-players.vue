@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="text-holder">
-      <p>W BETA testach uczestniczy już {{ playerCount }}</p>
+      <p>There are already {{ playerCount }} players</p>
     </div>
   </div>
 </template>
@@ -18,7 +18,7 @@ export default class HomeCountPlayers extends Vue {
   }
 
   pullPlayerCount() {
-    fetch("http://hexango.vxm.pl/api/getPlayersCount.php")
+    fetch("https://hexango.vxm.pl/SiteApi/getPlayersCount.php")
       .then(response => response.text())
       .then(data => {
         this.playerCount = Number.parseInt(data);
