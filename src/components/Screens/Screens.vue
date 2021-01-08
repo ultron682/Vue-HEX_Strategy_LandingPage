@@ -9,16 +9,6 @@
       >
         <img alt="Main Image" v-bind:src="image.src" />
       </div>
-
-      <p class="title title-old">Old screenshots</p>
-
-      <div
-        v-for="image in oldImages"
-        v-bind:key="image.id"
-        class="image-container"
-      >
-        <img alt="Main Image" v-bind:src="image.src" />
-      </div>
     </div>
   </div>
 </template>>
@@ -30,7 +20,6 @@ import { Component, Prop } from "vue-property-decorator";
 @Component
 export default class Screens extends Vue {
   @Prop() private images!: Array<any>;
-  @Prop() private oldImages!: Array<any>;
 }
 </script>
 

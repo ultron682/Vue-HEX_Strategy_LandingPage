@@ -17,12 +17,7 @@ export default {
   components: {
     Header,
     Footer,
-  },
-  mounted() {
-    let recaptchaScript = document.createElement("script");
-    recaptchaScript.setAttribute("src", "animations-scroll.js");
-    document.head.appendChild(recaptchaScript);
-  },
+  }
 };
 </script>
 

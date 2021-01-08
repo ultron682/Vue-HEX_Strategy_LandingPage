@@ -14,13 +14,13 @@
       </div>
 
       <div class="image-content">
-        <img class="desc-image" alt="Main Image" src="home/desc_cards.png" />
+        <img class="desc-image" alt="Main Image" src="home/home-desc-cards.png" />
       </div>
     </div>
 
     <div show-anim="slide-from-left-anim" class="hidden-for-anim container el2">
       <div class="image-content">
-        <img class="desc-image" alt="Main Image" src="home/home_levels.png" />
+        <img class="desc-image" alt="Main Image" src="home/home-desc-levels.png" />
       </div>
       <div class="texts-content">
         <h1 class="title">Infinite number of levels</h1>
@@ -44,7 +44,7 @@
       </div>
 
       <div class="image-content">
-        <img class="desc-image" alt="Main Image" src="home/desc_cards.png" />
+        <img class="desc-image" alt="Main Image" src="home/home-desc-multiplayer.png" />
       </div>
     </div>
   </div>

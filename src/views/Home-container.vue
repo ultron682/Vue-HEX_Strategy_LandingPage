@@ -20,8 +20,14 @@ import HomeDescAdvantages from "@/components/Home/home-desc-advantages.vue";
     HomeDesc,
     HomeGooglePlay,
     HomeCountPlayers,
-    HomeDescAdvantages
-  }
+    HomeDescAdvantages,
+  },
+  mounted() {
+    let recaptchaScript = document.createElement("script");
+    recaptchaScript.setAttribute("src", "animations-scroll.js");
+    document.head.appendChild(recaptchaScript);
+    console.log("mounted");
+  },
 })
 export default class HomeContainer extends Vue {}
 </script>
