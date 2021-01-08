@@ -1,11 +1,11 @@
 <template>
   <div class="container">
     <div class="head">
-      <p class="title">Zagraj za darmo</p>
+      <p class="title">Play for free</p>
 
       <p class="sub-title">
-        Kliknij przycisk poniżej, aby pobrać HEX Strategy ze sklepu Google Play.
-        To już czas, byś to ty zwyciężał!
+        Click the button below to download HEX Strategy from the Google Play store.
+        It is time for you to win!
       </p>
     </div>
     <a
@@ -14,7 +14,7 @@
     >
       <img
         alt="pobierz z Google Play"
-        src="https://play.google.com/intl/en_us/badges/static/images/badges/pl_badge_web_generic.png"
+        src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
       />
     </a>
   </div>

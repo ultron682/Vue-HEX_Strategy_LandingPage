@@ -3,19 +3,13 @@
     <div class="head-content">
       <div class="left-content">
         <h1 class="title">HEX Strategy</h1>
-        <h2 class="sub-title">Prosta i wciągająca gra strategiczna</h2>
+        <h2 class="sub-title">A simple and addictive strategy game</h2>
 
         <ul class="desc-list">
-          <li>turowa gra strategiczna z prostymi i przejrzystymi zasadami,</li>
-          <li>taktyczna, nie zawsze osiągniesz zwycięstwo starymi metodami,</li>
-          <li>
-            Multiplayer PvP! Zmierz się z innymi graczami. Pokaż kto jest
-            Zwycięzcą,
-          </li>
-          <li>
-            wciągająca! Lubisz strategie? W HEX Strategy zostaniesz na dłużej.To
-            jest pewne!
-          </li>
+          <li>turn-based strategy game with simple and clear rules,</li>
+          <li>Tactical, you will not always achieve victory by old methods,</li>
+          <li>Multiplayer PvP! Face up to other players. Show who is the Winner,</li>
+          <li>captivating! Do you like strategies? You will stay at HEX Strategy for longer. That's for sure!</li>
         </ul>
       </div>
 

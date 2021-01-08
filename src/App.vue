@@ -16,8 +16,13 @@ export default {
   name: "Home",
   components: {
     Header,
-    Footer
-  }
+    Footer,
+  },
+  mounted() {
+    let recaptchaScript = document.createElement("script");
+    recaptchaScript.setAttribute("src", "animations-scroll.js");
+    document.head.appendChild(recaptchaScript);
+  },
 };
 </script>
 
@@ -37,5 +42,38 @@ export default {
 
 .content {
   min-height: calc(100vh - 161px);
+}
+
+// Dodanie tej klasy spowoduje odpalenie domyślnej animacji, gdy element pojawi się w viewport
+.hidden-for-anim {
+  opacity: 0;
+}
+
+.slide-from-left-anim {
+  animation: slide-from-left 0.5s;
+}
+
+@keyframes slide-from-left {
+  from {
+    opacity: 0;
+    transform: translate(-100px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slide-from-right-anim {
+  animation: slide-from-right 0.5s;
+}
+
+@keyframes slide-from-right {
+  from {
+    opacity: 0;
+    transform: translate(100px);
+  }
+  to {
+    opacity: 1;
+  }
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="title">Zrzuty ekranu</p>
+    <p class="title">Screenshots</p>
     <div class="screens-container">
       <div
         v-for="image in images"
@@ -10,7 +10,7 @@
         <img alt="Main Image" v-bind:src="image.src" />
       </div>
 
-      <p class="title-old">Stare zrzuty ekranu</p>
+      <p class="title title-old">Old screenshots</p>
 
       <div
         v-for="image in oldImages"

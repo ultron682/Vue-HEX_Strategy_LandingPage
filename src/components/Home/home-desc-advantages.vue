@@ -1,15 +1,15 @@
 <template>
   <div class="wrapper">
-    <div data-aos="fade-up-right" class="container el1">
+    <div show-anim="slide-from-right-anim" class="hidden-for-anim container el1">
       <div class="texts-content">
-        <h1 class="title">Zbierz je wszystkie!</h1>
+        <h1 class="title">Gather them all!</h1>
         <h2 class="sub-title">
-          Aktualnie do zebrania jest 40 kart. Każda z nich ma swoją unikalną
-          moc. Gdy umieścisz kartę ze swojej talii na planszy, karta ożywi
-          jednostkę, która się w niej skrywa. Gdy jednostka zostanie stworzona
-          nic jej już nie zatrzyma, by posłusznie Ci służyła. Możliwe jest
-          jednak, że przeciwnik będzie chciał Ci ją odebrać. W jaki sposób? Sam
-          się na pewno o tym przekonasz :)
+          Currently there are 31 cards to collect. Each of them has its unique
+          power. When you place a card from your deck on the board, the card will revive
+          the unit that is hiding in it. When the unit is created
+          nothing will stop her from obeying you. It is possible
+          but that your opponent will want to take it away from you. How? Sam
+          you will surely find out about it :)
         </h2>
       </div>
 
@@ -18,28 +18,28 @@
       </div>
     </div>
 
-    <div data-aos="fade-up-left" class="container el2">
+    <div show-anim="slide-from-left-anim" class="hidden-for-anim container el2">
       <div class="image-content">
         <img class="desc-image" alt="Main Image" src="home/home_levels.png" />
       </div>
       <div class="texts-content">
-        <h1 class="title">Nieskończona ilość poziomów</h1>
+        <h1 class="title">Infinite number of levels</h1>
         <h2 class="sub-title">
-          HEX Strategy wyróżnia się tym na tle innych gier strategicznych, że
-          poziomów jest praktycznie nieskończona ilość. Wiele ciekawych poziomów
-          stworzonych przez społeczność już czeka na ciebie w Trybie Kreatywnym.
+          HEX Strategy stands out from other strategy games because
+          The levels are practically infinite. Many interesting levels
+          created by the community is already waiting for you in the Creative Mode.
         </h2>
       </div>
     </div>
 
-    <div data-aos="fade-up-right" class="container el1">
+    <div show-anim="slide-from-right-anim" class="hidden-for-anim container el1">
       <div class="texts-content">
-        <h1 class="title">Graj ze znajomymi</h1>
+        <h1 class="title">Multiplayer</h1>
         <h2 class="sub-title">
-          Każdy pojedynek to okazja do świetnej rozgrywki i wykazania się w
-          bitwie. Grając w trybie multiplayer może się okazać, że taktyki, które
-          wykorzystywałeś w kampanii mogą nie odnieść sukcesu w porównaniu do
-          starć przeciw prawdziwym graczom
+          Each duel is an opportunity to have a great gameplay and to prove yourself in
+          battles. When playing in multiplayer mode, you may find that the tactics that
+          you used in the campaign may not be successful compared to
+          to fight against real players
         </h2>
       </div>
 

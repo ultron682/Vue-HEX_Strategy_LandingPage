@@ -7,13 +7,13 @@
     <div class="view-pc">
       <div class="tabs">
         <router-link to="/">
-          <button class="tab">Strona główna</button>
+          <button class="tab">Home page</button>
         </router-link>
         <router-link to="/gameplay">
-          <button class="tab">Rozgrywka</button>
+          <button class="tab">Gameplay</button>
         </router-link>
         <router-link to="/contact">
-          <button class="tab">Kontakt</button>
+          <button class="tab">Contact</button>
         </router-link>
       </div>
     </div>
@@ -37,12 +37,12 @@
         <div class="list-container">
           <div class="list-element">
             <router-link to="/">
-              <button @click="onMenuClick" class="tab">Strona główna</button>
+              <button @click="onMenuClick" class="tab">Home page</button>
             </router-link>
           </div>
           <div class="list-element">
             <router-link to="/gameplay">
-              <button @click="onMenuClick" class="tab">Rozgrywka</button>
+              <button @click="onMenuClick" class="tab">Gameplay</button>
             </router-link>
           </div>
           <div class="list-element">
