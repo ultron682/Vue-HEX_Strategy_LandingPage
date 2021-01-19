@@ -14,6 +14,7 @@ import Component from "vue-class-component";
 import HomeGooglePlay from "@/components/Home/home-google-play.vue";
 import HomeCountPlayers from "@/components/Home/home-count-players.vue";
 import HomeDescAdvantages from "@/components/Home/home-desc-advantages.vue";
+import animateHtml from "@/animations-scroll.js";
 
 @Component({
   components: {
@@ -23,10 +24,8 @@ import HomeDescAdvantages from "@/components/Home/home-desc-advantages.vue";
     HomeDescAdvantages,
   },
   mounted() {
-    let recaptchaScript = document.createElement("script");
-    recaptchaScript.setAttribute("src", "animations-scroll.js");
-    document.head.appendChild(recaptchaScript);
-    console.log("mounted");
+    animateHtml();
+    console.log(1212);
   },
 })
 export default class HomeContainer extends Vue {}
