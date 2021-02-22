@@ -47,7 +47,7 @@
           </div>
           <div class="list-element">
             <router-link to="/contact">
-              <button @click="onMenuClick" class="tab">Kontakt</button>
+              <button @click="onMenuClick" class="tab">Contakt</button>
             </router-link>
           </div>
         </div>
