@@ -47,7 +47,7 @@
           </div>
           <div class="list-element">
             <router-link to="/contact">
-              <button @click="onMenuClick" class="tab">Contakt</button>
+              <button @click="onMenuClick" class="tab">Contact</button>
             </router-link>
           </div>
         </div>
@@ -57,13 +57,12 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
-
+import { Component, Vue } from 'vue-property-decorator'
 @Component
 export default class Header extends Vue {
   isActive = false;
 
-  onMenuClick() {
+  onMenuClick () {
     this.isActive = !this.isActive;
   }
 }
