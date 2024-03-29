@@ -1,24 +1,4 @@
-# hexstrategy
+Landing page for my mobile game HEX STRATEGY on the UNITY engine released in the google play shop for the android platform.
+https://hexango.vxm.pl/
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![image](https://github.com/ultron682/Vue-HEX_Strategy_LandingPage/assets/52131708/e570af10-fe1d-4880-b245-5629f9484fb8)
